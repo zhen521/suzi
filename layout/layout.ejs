@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<%
+var pageTitle = page.title || config.subtitle || '';
+if (is_archive()) pageTitle = 'Archives';
+if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+if (is_category()) pageTitle = 'Category: ' + page.category;
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+if (is_year()) pageTitle += ': ' + page.year;
+pageTitle += ' [ ' + config.title + ' ]';
+%>
+<html lang="<%= config.language %>" class="loading">
+<%- partial('_partial/head') %>
+<body>
+    <div class="container">
+    <%- partial('_partial/header') %>
+    <%- body %>
+    <%- partial('_partial/footer') %>
+    </div>
+</body>
+</html>

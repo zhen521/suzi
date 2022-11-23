@@ -1,0 +1,84 @@
+@import "header.styl";
+@import "index.styl";
+@import "archive.styl";
+@import "footer.styl";
+@import "paginator.styl";
+
+@font-face {
+    font-family: 'ZhuZiAWan-2';
+    src: url('../ZhuZiAWan-2.ttf'); /* IE9 Compat Modes */
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-family: ZhuZiAWan-2;
+}
+
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+.categories {
+    padding: 0;
+        a {
+            text-align: center;/*设置文本居中*/
+            line-height: 50px;/*设置文本行高*/
+            text-decoration: aliceblue;/*设置文本装饰*/
+
+            h1 {
+                color: #2d8cdc;
+                font-size: 2rem
+            }
+        }
+
+    }
+
+
+
+.tag {
+    padding: 20px;
+    padding-bottom: 6px;
+    padding-top: 11px;
+    
+
+            div {
+                // display: inline-block;
+            }
+
+            a {
+                display: inline-block;
+                height: 50px;/*设置元素高度*/
+                width: auto;/*设置元素宽度*/
+                border-radius: 10px;/*设置圆角边框*/
+                background: rgb(255, 237, 237);/*设置背景颜色*/
+                color: #2d8cdc;/*设置文本颜色*/
+                text-align: center;/*设置文本居中*/
+                line-height: 50px;/*设置文本行高*/
+                text-decoration: aliceblue;/*设置文本装饰*/
+                margin: 10px;/*设置外边距*/
+                padding: 15px
+
+                .suzifont {
+                    font-size: 14px;
+                }
+                span {
+                    display: inline-block;
+                    text-align:right;
+                    height: 50px;
+                    width: 50px;
+                }
+                
+            }
+            
+    }
+

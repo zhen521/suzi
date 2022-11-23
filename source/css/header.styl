@@ -1,0 +1,70 @@
+.header {
+    margin-top: 2em
+    width: 100%;
+    align-items: baseline
+    justify-content: space-between
+
+    .title {
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            color: #2d8cdc;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            // font-family: "Verdana", Geneva, sans-serif; //font - family属性指定一个元素的字体。
+            text-decoration: none; //text-decoration 属性规定添加到文本的修饰，下划线、上划线、删除线等
+            }
+        }
+        
+    
+    .navbar{
+        //导航栏下面的分割线
+        // border-bottom:1px solid #a3a3ab;
+        // border-bottom: 1px solid #eee;
+        //     border-bottom-width: 1px;
+        //     border-bottom-style: solid;
+        //     border-bottom-color: rgb(238, 238, 238);
+
+        .menu{
+            margin: 0
+            padding: 0
+            display: flex;
+
+
+            .menu-item {
+                display: flex;
+                display: block;
+                text-align: center;
+                margin-right: auto;
+                margin-left: auto;
+                justify-content: space-between
+                }
+
+            .menu-item-link{
+                color: #7aa0bc;
+                text-decoration: none;
+
+                &:hover {   //& 符号代表父级选择器。
+                    color: #2d8cdc;
+                    }
+                }        
+            }
+        }
+
+
+
+    // @media screen and (max-width: 767px)
+    // main .banner{
+    // min-height: 40vh;
+
+    // .banner{
+
+        
+    //     .img{
+    //         max-width: 100%;
+    //         height: auto;
+    //         }
+    //     }
+
+}

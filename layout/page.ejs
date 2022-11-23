@@ -1,0 +1,8 @@
+<%# 判断是分类还是标签页面，或自定义页面 %> 
+<% if (is_current(theme.menu.分类)) { %>
+    <%- partial('categories') %>
+    <% } else if (is_current(theme.menu.标签)) { %>
+    <%- partial('tags') %>
+    <% } else { %>
+    <%- partial('about') %>
+<% } %>

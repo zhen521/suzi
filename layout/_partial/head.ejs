@@ -1,0 +1,26 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title><%= config.title %></title>
+    <%- css('css/style.css') %>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+
+    <% if (theme.favicon) { %>
+        <% if (theme.favicon.desktop) { %>      
+            <link rel="shortcut icon" href="<%= url_for(theme.favicon.desktop.url) %>">
+        <% } %>
+  
+        <% if (theme.favicon.android) { %>       
+            <link rel="icon" type="image/png" href="<%= url_for(theme.favicon.android.url) %>" sizes="192x192">
+        <% } %>
+  
+        <% if (theme.favicon.apple) { %>
+            <link rel="apple-touch-icon" sizes="180x180" href="<%= url_for(theme.favicon.apple.url) %>">
+        <% } %>
+    <% } %>
+
+</head>
+

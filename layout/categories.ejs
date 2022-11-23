@@ -1,0 +1,17 @@
+
+<div class="categories">
+    <% site.categories.sort('name').map(function(category){  %>
+        <% let coverx = "" %>
+        <% category.posts.sort('-date').map(function(post){  %>
+
+            <% if(post.cover!==undefined && coverx==""){ %>
+                <% coverx = post.cover %>
+            <% } %>
+        <% }) %>
+
+        <a class="categories-ccc" href="<%- url_for(category.path) %>">
+            <div class="bg" style="background-image:url()"></div>
+            <h1><%= category.name %></h1>
+        </a>
+    <% }) %>
+</div>

@@ -1,0 +1,30 @@
+
+
+# 导航菜单
+menu:
+  首页: /
+  归档: /archives
+  分类: /categories
+  标签: /tags
+  友链: /links
+  关于: /about
+
+# 网站logo
+logo:
+  enabled: true
+  width: 50
+  height: 50
+  url: /images/logo.png
+
+
+# 网站图标
+favicon:
+  desktop:
+    url: /images/favicon.ico
+  android:
+    url: /images/favicon-192x192.png
+  apple:
+    url: /images/apple-touch-icon.png
+
+banner:
+  url: /images/sbpk-lx.jpg
